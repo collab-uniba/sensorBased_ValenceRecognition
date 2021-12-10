@@ -38,3 +38,7 @@ PipelineSetting.R : this script use the model Neutral VS not Neutral to classifi
 ```bash
 Rscript PipelineSetting.R <label> <testing_dataset_3labels.csv> <best_models_on_Neutral_vs_Non_Neutral.rds> <best_models_on_Positive_vs_Negative.rds> <predictions.csv> <metrics.csv> 
 ```
+Discretization.R : Script to divide the valence values into three sets using k-means clustering
+
+SelectNeutral.R : Script to create different dataset with different number of neutral case
+

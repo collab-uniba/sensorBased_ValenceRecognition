@@ -19,8 +19,7 @@ if [[ -n "$models_file" && -n "$csv_file" ]]; then
     do
         now=$(date +"%Y-%m-%d %H.%M")
         echo " :: Run $i -- started at $now"
-        #time Rscript tuning_10k_withSMOTE.R $i $csv_file $models_file $label $output_folder 
-        time Rscript tuning_10k_Train.R $i $csv_file $models_file $label $output_folder 
+                time Rscript tuning_10k.R $i $csv_file $models_file $label $output_folder 
     done   
 
     echo " Done"
